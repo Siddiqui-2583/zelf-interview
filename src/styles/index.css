@@ -201,3 +201,7 @@ button{
   background-color: #3355ff1c;
 }
 
+
+.avatar{
+  border-radius: 100%;
+}

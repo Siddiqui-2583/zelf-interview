@@ -69,7 +69,7 @@ export default function DataTable({ data }: TDataTableProps) {
             </tr>
           </thead>
           <tbody>
-            {preparedData.map((item) => (
+            {preparedData.map((item:any) => (
               <tr key={item.id}>
                 <td>{item.date}</td>
                 <td>{item.video.length > 10
