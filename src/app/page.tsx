@@ -3,93 +3,19 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className=''>
+      <a href="/api/auth/login">Login</a>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* // "dev": "next dev -p 3000 & local-ssl-proxy --key ./localhost-key.pem --cert ./localhost.pem --source 443 --target 3000" */}
+      {/* https://127.0.0.1:3000 */}
+      {/* https://dev-efcxwkmg0abd2mje.us.auth0.com/authorize?client_id=xAh2LbHLQ2xNCwm8Ik2Y8rVdREIbXV2l&scope=openid%20profile&response_type=code&redirect_uri=https%3A%2F%2F127.0.0.1%3A3000%2Fapi%2Fauth%2Fcallback&audience=https%3A%2F%2Fdev-efcxwkmg0abd2mje.us.auth0.com%2Fapi%2Fv2%2F&nonce=oYrjiMeNpmaYGZtfBW11qkCbX2qXg-1mT7LHWhtwJfI&state=eyJyZXR1cm5UbyI6Imh0dHBzOi8vMTI3LjAuMC4xOjMwMDAifQ&code_challenge_method=S256&code_challenge=VzrONdJKwCriy6vgmBTSYplfnVgkTiP_avzVT2SIYmc */}
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      {/* Created a new certificate valid for the following names 📜
+ - "localhost"
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+The certificate is at "./localhost.pem" and the key at "./localhost-key.pem" ✅
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+It will expire on 3 May 2026 */}
     </main>
   );
 }
