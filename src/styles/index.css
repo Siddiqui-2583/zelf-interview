@@ -1,0 +1,203 @@
+/* global */
+.font-outfit{
+  font-family: 'Outfit', sans-serif;
+}
+
+button{
+  border: none;
+  background-color: white;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.navbar-wrapper {
+  width: 100%;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #f1f2f3, #f1f2f3);
+  border-bottom: 1px solid #f1f2f3;
+}
+
+.navbar {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 104px;
+}
+
+.max-width {
+  max-width: 1440px;
+}
+
+.login-wrapper{
+  padding: 82px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 551px;
+  height: 563px;
+  padding: 110.5px 55.5px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+
+.register{
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 48px;
+}
+
+.continue-box{
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 24px;
+  cursor: pointer;
+}
+
+.continue-btn{
+  height: 51px;
+  cursor: pointer;
+}
+
+.represent-brand{
+  border: 1px solid var(--neutral-10);
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.already-member{
+  color: var(--neutral-50)
+}
+
+
+
+/* Add this CSS in your stylesheet or the head of your HTML file */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* loader */
+
+@keyframes ldio-rpinwye8j0b {
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(180deg) }
+  100% { transform: rotate(360deg) }
+}
+.ldio-rpinwye8j0b div {
+  /* position: absolute; */
+  animation: ldio-rpinwye8j0b 1s linear infinite;
+  width: 160px;
+  height: 160px;
+  /* top: 20px;
+  left: 20px; */
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 var(--primary);
+  transform-origin: 80px 82px;
+}
+.loadingio-eclipse {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+.ldio-rpinwye8j0b {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-rpinwye8j0b div { box-sizing: content-box; }
+
+
+
+/* data-table */
+
+.data-table{
+  background-color: white;
+  width: 1232px;
+  margin: 23px auto;
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+
+.data-table tr{
+  height: 73px;
+  border: 1px solid var(--neutral-5);
+ 
+}
+
+.data-table th{
+  color: var(--neutral-50);
+  font-size: 13px;
+  height: 65px;
+  margin: auto;
+}
+
+.data-table td{
+  color: var(--neutral-50);
+  font-size: 13px;
+  padding: 0 24px;
+}
+
+.view-post{
+  cursor: pointer;
+  color: var(--primary);
+  background-color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.view-post:hover{
+  background-color: #3355ff1c;
+}
+
