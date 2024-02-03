@@ -12,7 +12,7 @@ const dummyData = [
 
 const fetchData = async (page: number) => {
   const response = await fetch(
-    `https://hackapi.hellozelf.com/frontend/api/v1/contents?page=${page}`
+    `https://44c1-202-84-41-238.ngrok-free.app/api/contents?page=${page}`
   );
   if (!response.ok) {
     throw new Error("Network response was not ok");
@@ -43,6 +43,7 @@ const PaginationComponent = () => {
 
       {/* Pagination controls */}
       <button
+      className=""
         onClick={() => {
           // Fetch the next page when the button is clicked
           fetchData(data?.page + 1);

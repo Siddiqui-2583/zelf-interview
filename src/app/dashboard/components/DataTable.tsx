@@ -1,6 +1,7 @@
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import Platform from "./Platform";
+import { formatViews } from "../utils";
 
 type TDataTableProps = {
   data: any[];
@@ -13,11 +14,10 @@ function prepareData(data: any[]) {
       video: item?.content?.title ,
       creator: item?.creator?.username,
       platform: item?.creator?.platform,
-      totalViews: item?.content?.views,
+      totalViews: formatViews(item?.content?.views) ,
       totalEngagement: item?.content?.total_engagement,
       engagementRate:
-        `${((item?.content?.engagement_of_views /
-        item?.content?.engagement_of_followers)*100).toFixed(1)}%`,
+        `${(item?.content?.engagement_of_views*100).toFixed(1)}%`,
     };
   });
   console.log('result:', result);
