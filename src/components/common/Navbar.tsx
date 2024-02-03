@@ -15,7 +15,7 @@ export default function Navbar() {
         <Link href="/">
           <Image
             //   className={styles.logo}
-            src="/logo.svg"
+            src={user ? "/colorful-logo.svg" : "/logo.svg"}
             alt="zelf Logo"
             height={18}
             width={38}
