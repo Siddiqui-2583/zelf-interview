@@ -96,7 +96,7 @@ export default function DataTable({ data }: TDataTableProps) {
           <span className="close" onClick={closeModal}>
             &times;
           </span>
-          <h2>Details for ID: {selectedItem?.id}</h2>
+          <h2>Post Details</h2>
           <p>Date: {selectedItem?.date}</p>
           <p>Video: {selectedItem?.video}</p>
           <p>Creator: {selectedItem?.creator}</p>
